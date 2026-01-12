@@ -44,3 +44,14 @@ if (cartasVisiveis === 0) {
   mensagemErro.style.display = 'none';
 
 }});
+const selectCategoria = document.getElementById("categoria");
+const btnLimpar = document.getElementById("limpar-filtro");
+
+// Limpar filtro
+btnLimpar.addEventListener("click", () => {
+  // Reseta o select para a opção padrão
+  selectCategoria.selectedIndex = 0;
+
+  // Força o filtro rodar novamente
+  selectCategoria.dispatchEvent(new Event("change"));
+});

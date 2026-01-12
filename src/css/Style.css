@@ -123,9 +123,27 @@ main.container {
   height: 48px;
 }
 
+.btn-limpar {
+  background-color: #5f00ba;
+  color: #fff;
+  border: none;
+  padding: 1px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  height: 48px;
+}
+
+
 .btn-filtrar:hover {
   background-color: #7d2ddb;
 }
+
+.btn-limpar:hover {
+  background-color: #7d2ddb;
+}  
 
 @media (max-width: 768px) {
   .filtros {
@@ -454,4 +472,33 @@ ul.cartas {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.btn-finalizar {
+  width: 100%;
+  margin-top: 1px;
+  padding: 12px;
+  background-color: #5f00ba;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-finalizar:hover {
+  background-color: #3e007d;
+}
+.carrinho-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#itens-carrinho {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#finalizar-compra{
+  margin-top: 10px;
 }
